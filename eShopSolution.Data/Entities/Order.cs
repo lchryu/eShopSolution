@@ -2,7 +2,6 @@ using eShopSolution.Data.Enums;
 using System;
 using System.Collections.Generic;
 using System.Text;
-
 namespace eShopSolution.Data.Entities
 {
    public class Order
@@ -16,5 +15,6 @@ namespace eShopSolution.Data.Entities
         public string ShipPhoneNumber { set; get; }
         public OrderStatus Status { set; get; }
 
+        public List<OrderDetail> OrderDetails { get; set; }
     }
 }
